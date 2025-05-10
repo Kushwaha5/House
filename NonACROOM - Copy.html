@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Non-AC Room Detail</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff3e0, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeBg 2s ease-in;
+    }
+
+    .room-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      padding: 30px;
+      max-width: 400px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .room-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      animation: zoomIn 1s ease;
+    }
+
+    .room-card h1 {
+      font-size: 24px;
+      color: #ef6c00;
+      margin-bottom: 10px;
+    }
+
+    .room-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #d84315;
+      margin: 10px 0;
+    }
+
+    .book-btn {
+      background-color: #fb8c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .book-btn:hover {
+      background-color: #e65100;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeBg {
+      from { background: #ffe0b2; }
+      to { background: linear-gradient(135deg, #fff3e0, #ffffff); }
+    }
+  </style>
+</head>
+<body>
+  <div class="room-card">
+    <img src="https://somnathsagar.com/img/images/gallery/superior-room-non-ac.jpg" alt="Non-AC Room Image">
+    <h1> Non-AC Room</h1>
+    <p>Spacious non-AC room with comfortable bed, clean bathroom, and free Wi-Fi access.</p>
+    <p class="price">₹900 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+
+  <div class="room-card">
+    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/550669897.jpg?k=bc89fb43fd044d658363bb5a0fc33acfd916c95203fd73da347857c83fc35450&o=&hp=1" alt="Non-AC Room Image">
+    <h1> Non-AC Room</h1>
+    <p>Spacious non-AC room with comfortable bed, clean bathroom, and free Wi-Fi access.</p>
+    <p class="price">₹900 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/669016918.jpg?k=11be571466232d5587d261a4f8473cc8874775bc9da9a78c27644170b3375d89&o=&hp=1" alt="Non-AC Room Image">
+    <h1> Non-AC Room</h1>
+    <p>Spacious non-AC room with comfortable bed, clean bathroom, and free Wi-Fi access.</p>
+    <p class="price">₹900 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://www.rajgadhresort.com/assets/img/rooms/deluxe-non-ac-room3.jpg" alt="Non-AC Room Image">
+    <h1>Non-AC Room</h1>
+    <p>Spacious non-AC room with comfortable bed, clean bathroom, and free Wi-Fi access.</p>
+    <p class="price">₹900 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+ 
+</body>
+</html>

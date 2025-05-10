@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plots - HomeEase</title>
+  <link rel="stylesheet" href="plots.css" />
+</head>
+<body class="plot-body">
+
+  <header class="plot-header">
+    <h1 class="plot-title">📐 Prime Property Plots</h1> <nav>
+        <a href="index.html">⬅ Back to Home</a>
+        </nav>
+
+    <p class="plot-subtitle">Find your perfect land investment spot</p>
+  </header>
+
+  <section class="plot-grid">
+    <div class="plot-card">
+      <img src="https://is1-2.housingcdn.com/4f2250e8/deffd639d828e0ba025103d8a161a81a/v0/fs/aspiration-sector_88b-gurgaon-vatika.jpeg" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h1>Plot in Gurgaon</h1>
+      <p>₹1,50,000 • 1800 sq.ft</p>
+    </div>
+    <div class="plot-card">
+      <img src="https://lscdn.blob.core.windows.net/property/realestatead/09_03_2025_16_56_25_IMG_20250309_WA0000.jpg" alt="Plot in Jaipur" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h1>Residential Plot - Jaipur</h1>
+      <p>₹1,00,000 • 1500 sq.ft</p>
+    </div>
+    <div class="plot-card">
+      <img src="https://nandedcitypune.com/luxury-bungalow-plots-pune/assets/img/rhythm-gallery-12.jpg" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h1>Plot in Pune</h1>
+      <p>₹18,00,000 • 2000 sq.ft</p>
+    </div>
+  </section>
+
+  <script>
+    // Simple animation effect
+    window.onload = () => {
+      document.querySelectorAll('.plot-card').forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('visible');
+        }, i * 200);
+      });
+    };
+  </script>
+</body>
+</html>

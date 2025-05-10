@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villas - HomeEase</title>
+  <link rel="stylesheet" href="villas.css" />
+</head>
+<body class="villa-body">
+  <header class="villa-header">
+    <h1 class="animated-title">🏡 Luxury Villas</h1><nav>
+      <a href="index.html">⬅ Back to Home</a>
+      </nav>
+  </header>
+
+  <section class="villa-container">
+    <div class="villa-card">
+      <img src="https://destinationcompress.s3.ap-south-1.amazonaws.com/d939795c-e1c2-4e56-9bc5-16d7b9f6f35f.jpg" width="1000"> 
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Modern Villa - Goa</h3>
+      <p>₹ 35,000 / month</p>
+    </div>
+    <div class="villa-card">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/327214920.jpg?k=e81aeab6afc14bc43e50aeada0ff6a0f49eaf0cb33e3bc49af614a5262c2099a&o=&hp=1" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Beachside Villa - Kerala</h3>
+      <p>₹ 50,000 / month</p>
+    </div>
+    <div class="villa-card">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkq_E9zYE7Q8BOIWnfoiUh5Jo2X5-znv_6-6FyV_S7f-OobDVwdQxMSbaIZAt1VE_4JhOGAfj3NGsghUe_pwx2zmQP76mxKIGSEZEJa6t-Z_w6sGSGpY932bXkFsElQbszIGCwH4NYbv45sDEGBsJtUag13m7GDz_PD3nTRqQ2LUb86eprQiBW8m5Opac/s0/tiny-home-design.jpg"width="1000"> 
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Green Villa - Manali</h3>
+      <p>₹ 28,000 / month</p>
+    </div>
+  </section>
+
+  <script>
+    // Optional: Scroll animation or any dynamic effect can be added here
+    window.onload = () => {
+      document.querySelectorAll('.villa-card').forEach((card, i) => {
+        setTimeout(() => {
+          card.classList.add('show');
+        }, i * 200);
+      });
+    };
+  </script>
+</body>
+</html>

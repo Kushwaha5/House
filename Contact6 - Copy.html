@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Housing Details | HomeEase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    .house-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    p {
+      color: #555;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      background: #28a745;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .otp-section {
+      display: none;
+    }
+    .confirmed {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      animation: popUp 1s ease forwards;
+    }
+    .confirmed h3 {
+      color: #28a745;
+      font-size: 24px;
+      animation: bounce 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popUp {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyp_Nok74cUnoHWLo4FHhlPNTwxfALn0ehNA&s" class="house-img" alt="House Image">
+    <h4>Grand Geet Hotels</h4>AC
+        <p>₹3832 - Kanpur</p>
+    <p><strong>Amenities:</strong> AC, WiFi, Parking, Garden View</p>
+
+    <div class="booking-form">
+      <input type="text" id="name" placeholder="Enter your Name" required>
+      <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+      <button onclick="sendOTP()">Book Now</button>
+    </div>
+
+    <div class="otp-section" id="otpSection">
+      <input type="text" id="otp" placeholder="Enter OTP" required>
+      <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <div class="confirmed" id="confirmationBox">
+      <h3>🎉 Booking Confirmed!</h3>
+      <p>Thank you for booking with HomeEase!</p>
+    </div>
+  </div>
+
+  <script>
+    function sendOTP() {
+      const name = document.getElementById('name').value;
+      const mobile = document.getElementById('mobile').value;
+
+      if (name.trim() === "" || mobile.trim() === "") {
+        alert("Please enter your name and mobile number.");
+        return;
+      }
+
+      alert("OTP sent to " + mobile);
+      document.getElementById('otpSection').style.display = "block";
+    }
+
+    function verifyOTP() {
+      const otp = document.getElementById('otp').value;
+
+      if (otp === "1234") { // For demo, OTP is hardcoded as 1234
+        document.getElementById('confirmationBox').style.display = "block";
+        document.querySelector('.booking-form').style.display = "none";
+        document.getElementById('otpSection').style.display = "none";
+      } else {
+        alert("Invalid OTP. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>

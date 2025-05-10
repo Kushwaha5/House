@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | HomeEase</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+      background: url('https://media.istockphoto.com/id/1223059837/photo/cityscape-of-a-modern-residential-area-with-apartment-buildings-new-green-urban-landscape-in.jpg?s=2048x2048&w=is&k=20&c=Aynq8ov2QoZhLOgcQWnYhnf_AJimf8QXxi2GiRaOqvA=') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      width: 350px;
+      margin: 60px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container select,
+    .login-container input,
+    .login-container button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .login-container button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Owner Login</h2>
+    <form id="loginForm">
+      <select id="userType" required>
+        
+       
+        <option value="owner">owner</option>
+      </select>
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <input type="email" id="email" placeholder="Enter email" required />
+      <input type="text" id="mobile" placeholder="Enter mobile no" required />
+      <input type="file" id="profilePhoto" accept="image/*" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const userType = document.getElementById('userType').value;
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const mobile = document.getElementById('mobile').value;
+      const photoInput = document.getElementById('profilePhoto');
+
+      const reader = new FileReader();
+      reader.onload = function () {
+        const profilePhoto = reader.result;
+
+        const userData = {
+          userType,
+          username,
+          email,
+          mobile,
+          profilePhoto
+        };
+
+        localStorage.setItem('user', JSON.stringify(userData));
+
+        // Redirect based on user type (can customize these pages)
+        window.location.href = "profile.html";
+      };
+
+      if (photoInput.files.length > 0) {
+        reader.readAsDataURL(photoInput.files[0]);
+      }
+    });
+  </script>
+
+</body>
+</html>

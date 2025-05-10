@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commercial Properties</title>
+  <link rel="stylesheet" href="commercial.css" />
+</head>
+<body class="commercial-body">
+
+  <header class="commercial-header">
+    <h1 class="animated-heading">🏢 Commercial Spaces</h1><nav>
+      <a href="index.html">⬅ Back to Home</a>
+      </nav>
+    <p class="subtitle">Find offices, shops & business hubs</p>
+  </header>
+
+  <section class="commercial-grid">
+    <div class="commercial-card">
+      <img src="https://www.illumania.com/_readwritedata/location_image/7c4d990c-fe13-4731-9f0b-69c273b4fdbf.jpg" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Corporate Office - Mumbai</h3>
+      <p>₹ 80,000 / month</p>
+    </div>
+    <div class="commercial-card">
+      <img src="https://sharmaestates.com/wp-content/uploads/2020/12/IMG_1936.jpg" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>IT Office - Bangalore</h3>
+      <p>₹ 1,20,000 / month</p>
+    </div>
+    <div class="commercial-card">
+      <img src="https://img.squareyards.com/secondaryPortal/IN_638786679470554511-2703251025472547.jpg" width="900"/>
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Retail Shop - Delhi</h3>
+      <p>₹ 45,000 / month</p>
+    </div>
+    <div class="commercial-card">
+      <img src="https://modytoyota.com/images/showroom/hy06a1s/showroom.jpg" />
+      <button>
+        <a href="Booking.html" class="category">Booking</a>
+          </button>
+      <h3>Showroom - Hyderabad</h3>
+      <p>₹ 70,000 / month</p>
+    </div>
+  </section>
+
+  <script>
+    // Animation on page load
+    window.onload = () => {
+      document.querySelectorAll('.commercial-card').forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add('fade-in');
+        }, index * 200);
+      });
+    };
+  </script>
+</body>
+</html>
