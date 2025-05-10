@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - HomeEase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fcff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #3a7bd5, #00d2ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      animation: slideFade 1.2s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section.about-content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .about-content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .about-image img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: zoomIn 1.2s ease;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #e0f7ff;
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes slideFade {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        transform: translateY(60px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About HomeEase</h1>
+    <p>Your comfort, our mission 🏡</p>
+  </header>
+
+  <section class="about-content">
+    <h2>Who We Are</h2>
+    <p>HomeEase is your trusted partner in finding the perfect home, whether you're looking to rent, buy, or invest in property. With a user-friendly platform, verified listings, and personalized support, we make the process simple and stress-free.</p>
+
+    <p>Founded with a vision to connect people to their dream homes, HomeEase is committed to offering the best housing solutions for students, families, and working professionals across India. We believe in transparency, trust, and technology to create a seamless housing experience.</p>
+
+    <p>Join thousands of happy customers who found their dream space with HomeEase. We’re not just a platform, we’re your housing companion!</p>
+
+    <div class="about-image">
+      <img src="https://jonesasset.com/wp-content/uploads/2024/05/2_image-of-people-searching-for-a-house-to-lease.jpg">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 HomeEase. Crafted with ❤ for your comfort.
+  </footer>
+
+</body>
+</html>

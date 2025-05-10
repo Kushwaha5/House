@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+}
+
+.header {
+  background: #2f28f0;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+#searchBox {
+  padding: 8px;
+  width: 40%;
+  border-radius: 4px;
+  border: none;
+}
+.user-icons span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.category-bar {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f11b1b;
+}
+.category {
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.category:hover {
+  color: #b53c13;
+}
+
+.carousel {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slides.active {
+  opacity: 1;
+}
+
+.product-section {
+  padding: 20px;
+  background: #fff;
+}
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.product-card {
+  background: #fafafa;
+  width: 220px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.add-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #24cd0a;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.add-btn:hover {
+  background: #0bd71f;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #06f355;
+  color: rgb(231, 14, 14);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.search {
+  width: 40%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.nav-icons span {
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.category-item {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background: #f1f1f1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.category-item:hover {
+  background: #d1e0ff;
+}
+
+
+
+.category-item:hover {
+  background: #d1e0ff;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  min-width: 100%;
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+.carousel-controls {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-controls button {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.listings {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card {
+  width: 220px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+}
+.card h3, .card p {
+  padding: 0.5rem;
+}
+
+
+
+
+
+footer {
+  background: #0c1621;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+footer .socials {
+  margin-top: 1rem;
+}
+
+.cart-page {
+  padding: 20px;
+}
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-item {
+  display: flex;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cart-item img {
+  width: 150px;
+  border-radius: 10px;
+}
+.details h4 {
+  margin: 0;
+}
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #0b0bea;
+}
+
+.navbar {
+  background: #1505efb9;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.flat-intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.animate-text {
+  animation: fadeInUp 1s ease-out;
+}
+
+.flat-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.flat-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.flat-card:hover {
+  transform: scale(1.03);
+}
+
+.flat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.flat-info {
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+
+
+/* Login/Profile Styles */
+.login-container, .profile-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2, .profile-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input, .profile-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#preview {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

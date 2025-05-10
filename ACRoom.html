@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AC Room Detail</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: backgroundFade 2s ease-in;
+    }
+
+    .room-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      max-width: 400px;
+      animation: slideUp 1s ease-out;
+    }
+
+    .room-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      animation: zoomIn 1s ease;
+    }
+
+    .room-card h1 {
+      font-size: 24px;
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .room-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0077cc;
+      margin: 10px 0;
+    }
+
+    .book-btn {
+      background-color: #26a69a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .book-btn:hover {
+      background-color: #1e857e;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes backgroundFade {
+      from { background: #bbdefb; }
+      to { background: linear-gradient(135deg, #e0f7fa, #ffffff); }
+    }
+  </style>
+</head>
+<body>
+  <div class="room-card">
+    <img src="https://somnathsagar.com/mobile/mobile/superior-room-ac1.jpg" alt="AC Room Image">
+    <h1>Deluxe AC Room</h1>
+    <p>Cool, clean and cozy room with AC, Wi-Fi, attached bathroom, and room service.</p>
+    <p class="price">₹1500 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://www.hotelkalki.com/assets/img/rooms/a-deluxe-4.jpg" alt="AC Room Image">
+    <h1>Standard AC Room</h1>
+    <p>Feature
+        Free Wi-Fi Internet
+        Air Conditioning
+        Mini Bar
+        Multi-cuisine restaurant
+        TV</p>
+    <p class="price">₹1500 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://laxmilodgehowrah.com/images/room/2-image.jpeg" alt="AC Room Image">
+    <h1>Deluxe AC Room</h1>
+    <p>Cool, clean and cozy room with AC, Wi-Fi, attached bathroom, and room service.</p>
+    <p class="price">₹1500 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://images.oyoroomscdn.com/uploads/hotel_image/215060/deukvadfueij.jpg" alt="AC Room Image">
+    <h1>Hotel O Md Ac Rooms,</h1>
+    <p>Cool, clean and cozy room with AC, Wi-Fi, attached bathroom, and room service.</p>
+    <p class="price">₹1500 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+
+  <div class="room-card">
+    <img src="https://apanahoteldiu.in/wp-content/uploads/2024/04/2-bed-back-side-scaled.jpg" alt="AC Room Image">
+    <h1>Double Bed AC Roomm</h1>
+    <p>Cool, clean and cozy room with AC, Wi-Fi, attached bathroom, and room service.</p>
+    <p class="price">₹1500 / night</p>
+    <button>
+        <a href="Booking.html" class="category">Booking</a></button>
+  </div>
+</body>
+</html>
